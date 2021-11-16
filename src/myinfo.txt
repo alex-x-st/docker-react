@@ -1,0 +1,16 @@
+npm install -g create-react-app
+create-react-app frontend
+npx create-react-app frontend
+
+docker run -it -p 3000:3000 IMAGE_ID
+
+docker run -it -p 3000:3000 -v /home/node/app/node_modules -v $(pwd):/home/node/app ID
+
+
+yaml
+    web:
+        stdin_open: true
+
+docker-compose down && docker-compose up --build
+
+
