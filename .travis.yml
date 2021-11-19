@@ -11,6 +11,7 @@ script:
   - docker run -e CI=true alx/docker-react npm run test
 
 
+# travis ci - aws
 deploy:
   provider: elasticbeanstalk
   region:  "us-east-1"
@@ -22,6 +23,8 @@ deploy:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
+
+
   
 
 
